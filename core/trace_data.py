@@ -55,7 +55,7 @@ class TraceData:
         """
         registers = {}
         try:
-            reg_values = self.trace[row]["regs"]
+            reg_values = self.trace[row+1]["regs"]
             for reg_name, reg_index in self.regs.items():
                 reg_value = reg_values[reg_index]
                 registers[reg_name] = reg_value
